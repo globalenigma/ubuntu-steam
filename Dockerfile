@@ -36,7 +36,7 @@ WORKDIR $HOME
 USER 0
 
 ## Install steam
-RUN wgat http://repo.steampowered.com/steam/archive/precise/steam_latest.deb && apt-get update && apt install -y ./steam_latest.deb && yum clean all
+RUN wget http://repo.steampowered.com/steam/archive/precise/steam_latest.deb && apt-get update && apt install -y ./steam_latest.deb
 
 
 ### Add all install scripts for further steps
