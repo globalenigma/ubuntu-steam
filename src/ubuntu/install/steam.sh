@@ -2,7 +2,7 @@
 ### every exit != 0 fails the script
 set -e
 
-echo "Install some common tools for further installation"
+echo "Insteall Steam-Engine"
 apt-get update 
 apt-get install -y libc6-i386
 wget -q http://repo.steampowered.com/steam/archive/precise/steam_latest.deb
